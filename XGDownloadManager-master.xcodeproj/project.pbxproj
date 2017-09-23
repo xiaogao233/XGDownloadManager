@@ -32,6 +32,7 @@
 		F21AA8F51F667DDE0023977B /* XGDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGDownloader.m; sourceTree = "<group>"; };
 		F21AA8F61F667DDE0023977B /* XGDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGDownloadManager.h; sourceTree = "<group>"; };
 		F21AA8F71F667DDE0023977B /* XGDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGDownloadManager.m; sourceTree = "<group>"; };
+		F2CACF2D1F7610F800C622E4 /* XGDownloadConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGDownloadConstant.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +90,7 @@
 		F21AA8F31F667DDE0023977B /* XGDownloadManager */ = {
 			isa = PBXGroup;
 			children = (
+				F2CACF2D1F7610F800C622E4 /* XGDownloadConstant.h */,
 				F21AA8F41F667DDE0023977B /* XGDownloader.h */,
 				F21AA8F51F667DDE0023977B /* XGDownloader.m */,
 				F21AA8F61F667DDE0023977B /* XGDownloadManager.h */,
