@@ -15,6 +15,8 @@
 		F21AA8EC1F667D3C0023977B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F21AA8EA1F667D3C0023977B /* LaunchScreen.storyboard */; };
 		F21AA8F81F667DDE0023977B /* XGDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = F21AA8F51F667DDE0023977B /* XGDownloader.m */; };
 		F21AA8F91F667DDE0023977B /* XGDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F21AA8F71F667DDE0023977B /* XGDownloadManager.m */; };
+		F293E3321F77599C00A563A4 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F293E3311F77599C00A563A4 /* TableViewController.m */; };
+		F293E3361F7763EA00A563A4 /* TableViewDownloadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F293E3341F7763EA00A563A4 /* TableViewDownloadCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		F21AA8F51F667DDE0023977B /* XGDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGDownloader.m; sourceTree = "<group>"; };
 		F21AA8F61F667DDE0023977B /* XGDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGDownloadManager.h; sourceTree = "<group>"; };
 		F21AA8F71F667DDE0023977B /* XGDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XGDownloadManager.m; sourceTree = "<group>"; };
+		F293E3301F77599C00A563A4 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		F293E3311F77599C00A563A4 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		F293E3331F7763EA00A563A4 /* TableViewDownloadCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewDownloadCell.h; sourceTree = "<group>"; };
+		F293E3341F7763EA00A563A4 /* TableViewDownloadCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewDownloadCell.m; sourceTree = "<group>"; };
 		F2CACF2D1F7610F800C622E4 /* XGDownloadConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XGDownloadConstant.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +76,10 @@
 				F21AA8E01F667D3C0023977B /* AppDelegate.m */,
 				F21AA8E21F667D3C0023977B /* ViewController.h */,
 				F21AA8E31F667D3C0023977B /* ViewController.m */,
+				F293E3301F77599C00A563A4 /* TableViewController.h */,
+				F293E3311F77599C00A563A4 /* TableViewController.m */,
+				F293E3331F7763EA00A563A4 /* TableViewDownloadCell.h */,
+				F293E3341F7763EA00A563A4 /* TableViewDownloadCell.m */,
 				F21AA8E51F667D3C0023977B /* Main.storyboard */,
 				F21AA8E81F667D3C0023977B /* Assets.xcassets */,
 				F21AA8EA1F667D3C0023977B /* LaunchScreen.storyboard */,
@@ -172,6 +182,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F21AA8E41F667D3C0023977B /* ViewController.m in Sources */,
+				F293E3361F7763EA00A563A4 /* TableViewDownloadCell.m in Sources */,
+				F293E3321F77599C00A563A4 /* TableViewController.m in Sources */,
 				F21AA8E11F667D3C0023977B /* AppDelegate.m in Sources */,
 				F21AA8F91F667DDE0023977B /* XGDownloadManager.m in Sources */,
 				F21AA8DE1F667D3C0023977B /* main.m in Sources */,

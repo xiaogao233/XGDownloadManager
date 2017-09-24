@@ -7,8 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "TableViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
+
+/* tableView */
+@property(nonatomic, strong)UITableView *tableView;
+/* 数据源 */
+@property(nonatomic, strong)NSArray *dataSource;
 
 @end
 
@@ -16,14 +22,52 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self initLayout];
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)initLayout
+{
+    [self.view addSubview:self.tableView];
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.dataSource.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    }
+    cell.textLabel.text = self.dataSource[indexPath.row];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    TableViewController *vc = [[TableViewController alloc] initWithStyle:UITableViewStylePlain];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+#pragma mark - lazy
+- (UITableView *)tableView
+{
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+    }
+    return _tableView;
+}
+
+- (NSArray *)dataSource
+{
+    if (!_dataSource) {
+        _dataSource = @[@"批量下载"];
+    }
+    return _dataSource;
+}
 
 @end
